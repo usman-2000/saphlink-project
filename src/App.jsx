@@ -4,6 +4,8 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Cube from "./components/Cube";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -58,10 +60,10 @@ function App() {
               value: "#61dafb",
             },
             links: {
-              color: "transparent",
+              color: "#61dafb",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.1,
               width: 1,
             },
             collisions: {
@@ -85,7 +87,7 @@ function App() {
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.1,
             },
             shape: {
               type: "circle",
@@ -98,6 +100,10 @@ function App() {
         }}
       />
       <Navbar />
+      <div className="hero-main-cube-heading">
+        <Hero />
+        <Cube />
+      </div>
     </div>
   );
 }

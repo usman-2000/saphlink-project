@@ -1,0 +1,104 @@
+.cube-container {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#282c34, #61dafb);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #282c34;
+  transform: rotateX(90deg) translateZ(150px);
+}
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #61dafb;
+  transform: translateZ(-380px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px rgba(40, 44, 52, 0.2), 0 0 200px rgba(40, 44, 52, 0.4),
+    0 0 300px rgba(40, 44, 52, 0.6), 0 0 400px rgba(40, 44, 52, 0.8),
+    0 0 500px rgba(40, 44, 52, 1);
+}
+@media screen and (max-width: 950px) and (min-width: 600px) {
+  /* .cube-container {
+    width: 90%;
+  } */
+  .cube {
+    width: 200px;
+    height: 200px;
+  }
+  .top {
+    width: 200px;
+    height: 200px;
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  .top::before {
+    width: 200px;
+    height: 200px;
+    transform: translateZ(-290px);
+    box-shadow: 0 0 120px rgba(40, 44, 52, 0.2), 0 0 200px rgba(40, 44, 52, 0.4),
+      0 0 300px rgba(40, 44, 52, 0.6), 0 0 400px rgba(40, 44, 52, 0.8),
+      0 0 500px rgba(40, 44, 52, 1);
+  }
+  .cube div {
+    width: 200px;
+    height: 200px;
+  }
+  .cube div span {
+    width: 200px;
+    height: 200px;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+  }
+  body {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cube-container {
+    display: none;
+  }
+}
