@@ -11,7 +11,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #282c34;
+  background-color: #0c121c;
+  /* background-color: #04171d6b; */
 }
 
 a {
@@ -103,18 +104,6 @@ li {
 
 .social-media .hamburger-menu {
   display: none;
-}
-
-.facebook {
-  color: #3b5998;
-}
-
-.instagram {
-  color: #c32aa3;
-}
-
-.youtube {
-  color: #ff0000;
 }
 
 /* hero section   */

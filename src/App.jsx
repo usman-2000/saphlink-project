@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -6,6 +5,10 @@ import { useCallback } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Cube from "./components/Cube";
+import Service from "./components/Service";
+import AboutHome from "./components/AboutHome";
+import Footer from "./components/Footer";
+import Operate from "./components/Operate";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -104,6 +107,11 @@ function App() {
         <Hero />
         <Cube />
       </div>
+      <Service />
+
+      <AboutHome />
+      <Operate />
+      <Footer />
     </div>
   );
 }
