@@ -44,4 +44,15 @@
   .hero-container {
     width: 90%;
   }
+  #hero-main-heading {
+    font-size: 3.4rem;
+  }
+  #hero-sub-main {
+    font-size: 2.5rem;
+  }
+  .btn-1 {
+    width: 13rem;
+    font-size: 1.8rem;
+    margin: 15px;
+  }
 }

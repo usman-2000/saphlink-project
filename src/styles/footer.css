@@ -58,3 +58,24 @@
   font-weight: 200;
   margin-left: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .footer-main-heading h1 {
+    font-size: 2.3rem;
+  }
+  .footer-main-heading span {
+    font-size: 3.1rem;
+  }
+  .footer-main-heading img {
+    width: 70px;
+    height: 70px;
+  }
+  .footer-main-heading {
+    width: 350px;
+  }
+  .footer-list-container ul li {
+    font-size: 1.5rem;
+    color: #61dafb;
+    margin: 10px 15px 10px 15px;
+  }
+}

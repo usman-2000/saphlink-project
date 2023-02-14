@@ -110,3 +110,11 @@ p {
     max-width: 33.33%;
   }
 }
+@media screen and (max-width: 600px) {
+  .section-heading {
+    font-size: 3rem;
+  }
+  .section-sub-heading {
+    font-size: 2rem;
+  }
+}

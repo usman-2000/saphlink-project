@@ -6,12 +6,17 @@ import { fa3 } from "@fortawesome/free-solid-svg-icons";
 export default function Operate() {
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <h2 className="main-heading">This is how we operate</h2>
         <h1>
           ------------------------------------------------------------------------------------------
-        </h1>
-        <div className="sub-container">
+        </h1> */}
+      <div className="sub-container">
+        <div className="heading-cont">
+          <h2 className="main-heading">This is how we operate</h2>
+        </div>
+
+        <div className="card-container">
           <div className="card-op">
             <FontAwesomeIcon className="digit" icon={fa1} />
             <h2 className="heading">Schedule a Free Discovery Call</h2>
@@ -41,6 +46,7 @@ export default function Operate() {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 }

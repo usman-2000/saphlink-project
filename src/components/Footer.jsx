@@ -2,6 +2,7 @@ import React from "react";
 import logosapphire from "../images/logosapphire.png";
 import email from "../images/email.png";
 import phone from "../images/phone.png";
+import { NavLink } from "react-router-dom";
 
 import "../styles/footer.css";
 
@@ -16,10 +17,18 @@ export default function Footer() {
       </div>
       <div className="footer-list-container">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/service">Services</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
         </ul>
       </div>
       <div className="footer-contact-info">

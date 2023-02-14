@@ -8,10 +8,15 @@ import {
   faViruses,
   faWrench,
 } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Particle from "../components/Particle";
 
 export default function Service() {
   return (
     <>
+      <Particle />
+      <Navbar />
       <section>
         <div className="heading-container">
           <h2 className="section-heading">What can we do for you?</h2>
@@ -94,6 +99,7 @@ export default function Service() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

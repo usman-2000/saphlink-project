@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Button from "./Button";
+import logosapphire from "../images/logosapphire.png";
 
 import { NavLink } from "react-router-dom";
 
@@ -17,6 +18,7 @@ const Navbar = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
+          <img src={logosapphire} alt="" />
           <h2>
             <span>S</span>aph
             <span>L</span>ink
